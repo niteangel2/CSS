@@ -1,0 +1,37 @@
+*{
+    /* hamare content k block chota ho jaata hai  total dimension
+    of the block remain same*/
+    box-sizing: border-box; 
+}
+
+.container{
+    height : 400px;
+    border : 2px solid blue;
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row; 
+    /* flex-wrap: wrap; /*it will intact the width in way possible element will */
+    /* shift to the next line when you decrease the viewport  size*/ 
+    /* wrap- reverse mein upar wali line mein chle jaate hai elements */
+    /* justify-content: center; element will alighn at the start(main axis k start pe) */
+    /* justify-content: space-around; it will give equal space between the elements (between) */
+    /* justify-content: space-evenly;it will give eual space from start */
+    /* justify-content: space-between; it will give equal space between the elements (start and end) */
+    align-items: flex-start; /*it will align the element at the start of the cross axis */
+    /* align-items: center; it will align the element at the center of the cross axis */
+    /* align-items: flex-end; it will align the element at the end of the cross axis */
+    /* align-items: baseline; */
+
+    align-content: flex-start;
+    gap: 10px; /*it will give gap between the elements */
+}   
+.box{
+    border : 1px solid black;
+    background-color: pink;
+    width: 100px;
+     
+}
+#box1{
+    order: 1;/* it will change the order of the element*/
+    align-self: stretch;
+}
